@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réglages Nikon D750</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Réglages recommandés Nikon D750</h1>
+    <div class="controls">
+      <select id="filterType">
+        <option value="all">Tous les types</option>
+      </select>
+      <label><input type="checkbox" id="toggleDarkMode" /> Mode sombre</label>
+      <label><input type="checkbox" id="toggleReminders" checked /> Rappels photo</label>
+      <button id="installBtn" hidden>Installer</button>
+    </div>
+  </header>
+  <main>
+    <table id="settingsTable">
+      <thead>
+        <tr>
+          <th>Type</th><th>Icône</th><th>Mode</th><th>Exposition</th><th>Ouverture</th><th>Vitesse</th>
+          <th>ISO</th><th>Balance</th><th>AF</th><th>Focale</th><th>Filtre ND</th><th>Remarques</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
